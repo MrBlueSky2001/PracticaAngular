@@ -1,0 +1,124 @@
+{
+  "profesores": [
+    {
+      "id": "1",
+      "usuario": "Juan Pedro",
+      "email": "juan.pedro.bernal@iesmartinezm.es",
+      "modulo": "DWEC",
+      "horas": "6",
+      "foto": "https://avatars.githubusercontent.com/u/144746228?v=4"
+    },
+    {
+      "id": "2",
+      "usuario": "Eduardo",
+      "email": "eduardo.serrano@iesmartinezm.es",
+      "modulo": "DWES",
+      "horas": "8",
+      "foto": "https://media.licdn.com/dms/image/D4D03AQHuAfGXeckqWQ/profile-displayphoto-shrink_400_400/0/1670952226535?e=2147483647&v=beta&t=cgvuRFXZoIu1H0gYI6XWNI6RNMVFl1xk8h_4C2hq7d4"
+    },
+    {
+      "id": "3",
+      "usuario": "Daniel",
+      "email": "daniel.vidal@iesmartinezm.es",
+      "modulo": "HLC",
+      "horas": "3",
+      "foto": "https://media.licdn.com/dms/image/C4E03AQEomJdAhr4k-g/profile-displayphoto-shrink_400_400/0/1516776296929?e=2147483647&v=beta&t=3LoxlOastiEuBd22xtqunHPimh7SiZMX0fSGYc64cDw"
+    },
+    {
+      "id": "4",
+      "usuario": "David",
+      "email": "daviz.cazalla@iesmartinezm.es",
+      "modulo": "DIWE",
+      "horas": "6",
+      "foto": "https://randomuser.me/api/portraits/men/37.jpg"
+    },
+    {
+      "id": "5",
+      "usuario": "Eliseo",
+      "email": "eliseo.molero@iesmartinezm.es",
+      "modulo": "DAWE",
+      "horas": "3",
+      "foto": "https://randomuser.me/api/portraits/men/0.jpg"
+    },
+    {
+      "id": "6",
+      "usuario": "Marta",
+      "email": "marta.jimenez@iesmartinezm.es",
+      "modulo": "EINEM",
+      "horas": "4",
+      "foto": "https://randomuser.me/api/portraits/women/76.jpg"
+    }
+  ],
+  "alumnos": [
+    {
+      "id": "1",
+      "usuario": "Joaquín",
+      "email": "joaquin@dominio.es",
+      "edad": "20",
+      "foto": "https://randomuser.me/api/portraits/men/72.jpg"
+    },
+    {
+      "id": "2",
+      "usuario": "Sydney",
+      "email": "sydney@dominio.es",
+      "edad": "19",
+      "foto": "https://randomuser.me/api/portraits/women/88.jpg"
+    },
+    {
+      "id": "3",
+      "usuario": "Jesús",
+      "email": "jesus@dominio.es",
+      "edad": "22",
+      "foto": "https://randomuser.me/api/portraits/men/86.jpg"
+    },
+    {
+      "id": "4",
+      "usuario": "Salvador",
+      "email": "salvador@dominio.es",
+      "edad": "20",
+      "foto": "https://randomuser.me/api/portraits/men/79.jpg"
+    },
+    {
+      "id": "5",
+      "usuario": "Jaime",
+      "email": "jaime@dominio.es",
+      "edad": "26",
+      "foto": "https://randomuser.me/api/portraits/men/40.jpg"
+    },
+    {
+      "id": "6",
+      "usuario": "Alejandro",
+      "email": "alejandro@dominio.es",
+      "edad": "27",
+      "foto": "https://randomuser.me/api/portraits/men/81.jpg"
+    },
+    {
+      "id": "7",
+      "usuario": "Juan",
+      "email": "juan@dominio.es",
+      "edad": "19",
+      "foto": "https://randomuser.me/api/portraits/men/20.jpg"
+    },
+    {
+      "id": "8",
+      "usuario": "Nerea",
+      "email": "nerea@dominio.es",
+      "edad": "19",
+      "foto": "https://randomuser.me/api/portraits/women/10.jpg"
+    },
+    {
+      "id": "9",
+      "usuario": "Rubén",
+      "email": "ruben@dominio.es",
+      "edad": "20",
+      "foto": "https://randomuser.me/api/portraits/men/24.jpg"
+    },
+    {
+      "id": "10",
+      "usuario": "Marcos",
+      "email": "marcos@dominio.es",
+      "edad": "20",
+      "foto": "https://randomuser.me/api/portraits/men/46.jpg"
+    }
+  ]
+}

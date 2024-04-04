@@ -1,0 +1,13 @@
+<div class="container" *ngIf="informacion">
+  <div class="card mx-auto" style="width: 30rem;">
+    <h2>Foto del Profesor {{ informacion?.usuario }}</h2>
+    <img class="card-img-top" style="width: 30rem; height: auto;" [src]="informacion?.foto" alt="Foto del profesor">
+    <div class="card-body text-center">
+      <button (click)="borrarInformacion()" class="btn btn-secondary">Borrar información mostrada</button>
+    </div>
+  </div>
+</div>
+
+<div class="alert alert-warning text-center" role="alert" *ngIf="!informacion">
+  No hay información que mostrar
+</div>

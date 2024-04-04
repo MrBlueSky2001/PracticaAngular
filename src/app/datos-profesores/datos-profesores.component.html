@@ -1,0 +1,130 @@
+<h2>Componente DatosProfesoresComponent</h2>
+
+<div class="container">
+  <div class="row">
+    <!-- Tarjeta de "Resultado de Búsqueda" -->
+    <div class="col-md-3">
+      <div class="card mt-3">
+        <div class="card-body">
+          <h2 class="card-title">Resultado de la Búsqueda</h2>
+          <img class="card-img-top" style="width: 15rem;" [src]="profesorData?.foto" alt="Foto del profesor">
+          <h5 class="card-title">{{ profesorData?.usuario }}</h5>
+          <p class="card-text">ID: {{ profesorData?.id }}</p>
+          <p class="card-text">Email: {{ profesorData?.email }}</p>
+          <p class="card-text">Módulo: {{ profesorData?.modulo }}</p>
+          <p class="card-text">Horas: {{ profesorData?.horas }}</p>
+          <button (click)="mostrarInformacion(profesorData)" class="btn btn-secondary">Mostrar en Información</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lista de Profesores -->
+    <div class="col-md-9">
+      <div class="card mt-3">
+        <div class="card-body">
+          <h2 class="card-title">Lista de Alumnos</h2>
+          <div class="row">
+            <div *ngFor="let profesor of profesorData" class="col-md-4 mb-3">
+              <div class="card" style="width: 15rem;">
+                <img class="card-img-top" style="width: 15rem;" [src]="profesor?.foto" alt="Foto del profesor">
+                <div class="card-body text-center">
+                  <h5 class="card-title">{{ profesor?.usuario }}</h5>
+                  <p class="card-text">ID: {{ profesor?.id }}</p>
+                  <p class="card-text">Email: {{ profesor?.email }}</p>
+                  <p class="card-text">Módulo: {{ profesor?.modulo }}</p>
+                  <p class="card-text">Horas: {{ profesor?.horas }}</p>
+                  <button (click)="mostrarInformacion(profesor)" class="btn btn-secondary">Mostrar en Información</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- LISTADO
+<div *ngIf="!mostrarCarta" class="container">
+  <div class="row">
+    <div *ngFor="let profesor of profesorData" class="col-md-3 mb-3">
+      <div class="card" style="width: 15rem;">
+        <img class="card-img-top" style="width: 15rem;" [src]="profesor?.foto" alt="Foto del profesor">
+        <div class="card-body text-center">
+          <h5 class="card-title">{{ profesor?.usuario }}</h5>
+          <p class="card-text">ID: {{ profesor?.id }}</p>
+          <p class="card-text">Email: {{ profesor?.email }}</p>
+          <p class="card-text">Módulo: {{ profesor?.modulo }}</p>
+          <p class="card-text">Horas: {{ profesor?.horas }}</p>
+          <button (click)="mostrarInformacion(profesor)" class="btn btn-secondary">Mostrar en Información</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+RESULTADO BÚSQUEDA
+<div class="container">
+  <div class="card mx-auto" style="width: 15rem;" [hidden]="!profesorData">
+    <img class="card-img-top" style="width: 15rem;" [src]="profesorData?.foto" alt="Foto del profesor">
+    <div class="card-body text-center">
+      <h5 class="card-title">{{ profesorData?.usuario }}</h5>
+      <p class="card-text">ID: {{ profesorData?.id }}</p>
+      <p class="card-text">Email: {{ profesorData?.email }}</p>
+      <p class="card-text">Módulo: {{ profesorData?.modulo }}</p>
+      <p class="card-text">Horas: {{ profesorData?.horas }}</p>
+      <button (click)="mostrarInformacion(profesorData)" class="btn btn-secondary">Mostrar en Información</button>
+    </div>
+  </div>
+</div> -->
+
+<!-- 
+<div class="container">
+   LISTADO 
+  <div *ngIf="!mostrarCarta">
+    <div class="row">
+      <div *ngFor="let profesor of profesorData" class="col-md-3 mb-3">
+        <div class="card" style="width: 15rem;">
+          <img class="card-img-top" style="width: 15rem;" [src]="profesor?.foto" alt="Foto del profesor">
+          <div class="card-body text-center">
+            <h5 class="card-title">{{ profesor?.usuario }}</h5>
+            <p class="card-text">ID: {{ profesor?.id }}</p>
+            <p class="card-text">Email: {{ profesor?.email }}</p>
+            <p class="card-text">Módulo: {{ profesor?.modulo }}</p>
+            <p class="card-text">Horas: {{ profesor?.horas }}</p>
+            <button (click)="mostrarInformacion(profesor)" class="btn btn-secondary">Mostrar en Información</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  RESULTADO BÚSQUEDA 
+  <div *ngIf="mostrarCarta">
+    <div class="card mx-auto" style="width: 15rem;" [hidden]="!profesorData">
+      <img class="card-img-top" style="width: 15rem;" [src]="profesorData?.foto" alt="Foto del profesor">
+      <div class="card-body text-center">
+        <h5 class="card-title">{{ profesorData?.usuario }}</h5>
+        <p class="card-text">ID: {{ profesorData?.id }}</p>
+        <p class="card-text">Email: {{ profesorData?.email }}</p>
+        <p class="card-text">Módulo: {{ profesorData?.modulo }}</p>
+        <p class="card-text">Horas: {{ profesorData?.horas }}</p>
+        <a href="#" class="btn btn-secondary">Mostrar en Información</a>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<!-- <div *ngIf="mostrarCarta" class="container">
+  <div class="card mx-auto" style="width: 15rem;">
+    <img class="card-img-top" style="width: 15rem;" [src]="profesor?.foto" alt="Foto del profesor">
+    <div class="card-body text-center">
+      <h5 class="card-title">{{ profesor?.usuario }}</h5>
+      <p class="card-text">ID: {{ profesor?.id }}</p>
+      <p class="card-text">Email: {{ profesor?.email }}</p>
+      <p class="card-text">Módulo: {{ profesor?.modulo }}</p>
+      <p class="card-text">Horas: {{ profesor?.horas }}</p>
+      <a href="#" class="btn btn-secondary">Mostrar en Información</a>
+    </div>
+  </div>
+</div> -->

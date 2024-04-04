@@ -1,0 +1,8 @@
+<h2>Componente ProfesoresComponent</h2>
+
+<div class="btn-group">
+    <input type="text" placeholder="Introduce ID" name="id" [(ngModel)]="inputIdGet"/>
+    <input type="button" class="btn btn-secondary" value="Get" (click)="get3()"/>
+</div>
+
+<app-datos-profesores *ngIf="resultadoPeticion" [profesorData]="resultadoPeticion" [profesorId]="inputIdGet"></app-datos-profesores>
